@@ -1,0 +1,72 @@
+{
+	"_version": "1.0.0",
+	"sap.app": {
+		"id": "ch.draeyer.mike.portfolio",
+		"type": "application",
+		"title": "Portfolio Page",
+		"description": "Michael Dräyer",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "ch.draeyer.mike.portfolio.view.App",
+			"type": "XML",
+			"id": "app"
+		},
+		"dependencies": {
+			"minUI5Version": "1.98.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "ch.draeyer.mike.portfolio.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "portfolio_page",
+					"target": "portfolio_page"
+				}
+			],
+			"targets": {
+				"portfolio_page": {
+					"id": "portfolio_page",
+					"name": "PortfolioPage"
+				}
+			}
+		}
+	}
+}

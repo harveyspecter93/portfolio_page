@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_page",
+  "private": false,
+  "version": "1.0.0",
+  "author": "Michael Dräyer",
+  "description": "EWEB - Portfolio Page Michael D.",
+  "scripts": {
+    "start": "ui5 serve",
+    "build": "ui5 build"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^2.0.0"
+  }
+}
