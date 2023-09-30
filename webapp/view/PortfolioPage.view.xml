@@ -1,15 +1,131 @@
-<mvc:View
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:layout="sap.ui.layout"
+	xmlns:m="sap.m"
+	xmlns:goals="ch.draeyer.mike.portfolio.blocks.goals"
+	xmlns:personal="ch.draeyer.mike.portfolio.blocks.personal"
+	xmlns:employment="ch.draeyer.mike.portfolio.blocks.employment"
 	controllerName="ch.draeyer.mike.portfolio.controller.Portfolio"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
-	<Page title="Portfolio Page by Michael Dräyer">
+	height="100%">
+	<ObjectPageLayout 
+		showTitleInHeaderContent="true"
+		upperCaseAnchorBar="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<expandedHeading>
+					<m:FlexBox>
+						<m:Title text="Michael Dräyer" wrapping="true"/>
+						<m:ObjectMarker type="Favorite" class="sapUiTinyMarginBegin"/>
+					</m:FlexBox>
+				</expandedHeading>
+
+				<snappedHeading>
+					<m:FlexBox  fitContainer="true" alignItems="Center">
+						<m:Avatar src="../img/draeyer_mike.png" class="sapUiTinyMarginEnd"/>
+						<m:Title text="Michael Dräyer" wrapping="true"/>
+					</m:FlexBox>
+				</snappedHeading>
+
+				<expandedContent>
+					<m:Text text="Professional SAP UI5 Developer"/>
+				</expandedContent>
+
+				<snappedContent>
+					<m:Text text="Professional SAP UI5 Developer"/>
+				</snappedContent>
+
+				<snappedTitleOnMobile>
+					<m:Title text="Professional SAP UI5 Developer"/>
+				</snappedTitleOnMobile>
+
+				<actions>
+					<m:Button text="Toggle Footer" press=".toggleFooter"/>
+				</actions>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
 		<headerContent>
-			<Button
-				icon="sap-icon://hello-world"
-				press=".onPressHelloWorld"/>
+			<m:FlexBox wrap="Wrap">
+				<m:Avatar class="sapUiSmallMarginEnd" src="../img/draeyer_mike.png"  displaySize="L" />
+
+					<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+						<m:Link text="+41 75 402 24 73"/>
+						<m:Link text="mike.draeyer@gmail.com"/>
+					</layout:VerticalLayout>
+
+				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					<m:Label text="Hello! I am Michael and I study at BFH"/>
+					<m:VBox>
+						<m:Label text="Achieved goals"/>
+						<m:ProgressIndicator percentValue="30" displayValue="30%"/>
+					</m:VBox>
+				</layout:VerticalLayout>
+
+				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					<m:Label text="Uetendorf BE, Switzerland"/>
+				</layout:VerticalLayout>
+			</m:FlexBox>
 		</headerContent>
-		<content>
-            <Text text="To say hello World, just press the Globe-Icon in the upper right corner." />
-		</content>
-	</Page>
+		<sections>
+			<ObjectPageSection titleUppercase="false" title="2023 Goals Plan">
+				<subSections>
+					<ObjectPageSubSection title="Goal summary" titleUppercase="false">
+						<blocks>
+							<goals:GoalsBlock id="goalsblock"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection titleUppercase="false" title="Personal">
+				<subSections>
+					<ObjectPageSubSection title="Connect" titleUppercase="false">
+						<personal:BlockAdresses id="adresses"/>
+						<personal:BlockPhoneNumber id="phone"/>
+						<personal:BlockSocial id="social"/>
+						<personal:BlockMailing id="mailing"/>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection titleUppercase="false" title="Employment">
+				<subSections>
+					<ObjectPageSubSection title="Job information" titleUppercase="false">
+						<blocks>
+							<employment:BlockJobInfoPart1 id="jobinfopart1"/>
+							<employment:BlockJobInfoPart2 id="jobinfopart2"/>
+							<employment:BlockJobInfoPart3 id="jobinfopart3"/>
+						</blocks>
+					</ObjectPageSubSection>
+
+					<ObjectPageSubSection title="Employee Details" titleUppercase="false">
+						<blocks>
+							<employment:BlockEmpDetail id="empdetail" columnLayout="1"/>
+						</blocks>
+					</ObjectPageSubSection>
+
+					<ObjectPageSubSection title="Job Relationship" titleUppercase="false">
+						<blocks>
+							<employment:EmploymentBlockJob id="employmentblockjob" showSubSectionMore="true">
+								<employment:mappings>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp1"
+												  externalPath="/Employee/0"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp2"
+												  externalPath="/Employee/1"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp3"
+												  externalPath="/Employee/2"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp4"
+												  externalPath="/Employee/3"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp5"
+												  externalPath="/Employee/4"/>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="emp6"
+												  externalPath="/Employee/5"/>
+								</employment:mappings>
+							</employment:EmploymentBlockJob>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
 </mvc:View>

@@ -1,0 +1,21 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+
+	<forms:SimpleForm labelSpanL="4" labelSpanM="4" editable="false"
+					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+					  maxContainerCols="2" layout="ResponsiveGridLayout" width="100%">
+
+		<Label text="Job classification"/>
+		<Text text="Professional SAP UI5 Developer"/>
+
+		<Text text=" "/>
+
+		<Label text="Job title"/>
+		<Text text="BizDevOps Engineer"/>
+
+		<Text text=" "/>
+
+		<Label text="Local Job Title"/>
+		<Label text="Frontend Developer"/>
+	</forms:SimpleForm>
+
+</mvc:View>

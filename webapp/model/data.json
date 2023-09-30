@@ -1,0 +1,29 @@
+{
+    "Employee": [
+        {
+            "name": "Milva",
+            "job": "Scrum Master"
+        },
+        {
+            "name": "Pascal",
+            "job": "Product Owner"
+        },
+        {
+            "name": "Daniela",
+            "job": "UX Designer"
+        },
+        {
+            "name": "Dirk",
+            "job": "Quality Engineer"
+        },
+        {
+            "name": "Lisa",
+            "job": "Team Member"
+        },
+        {
+            "name": "Loretana",
+            "job": "Team Member"
+        }
+    ]
+  }
+  

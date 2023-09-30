@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+
+
+	<forms:SimpleForm labelSpanL="4" labelSpanM="4" editable="false"
+					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+					  maxContainerCols="2" layout="ResponsiveGridLayout" width="100%">
+
+		<Label text="Working for SBB since"/>
+		<Text text="Aug, 2014"/>
+
+		<Label text="SAP Experience"/>
+		<Text text="10 years"/>
+
+		<Label text="Period of notice"/>
+		<Text text="3 months"/>
+
+	</forms:SimpleForm>
+
+
+</mvc:View>

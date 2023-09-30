@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+	<forms:SimpleForm editable="false" layout="ColumnLayout">
+
+			<Label text="Successfully complete study" />
+			<Text text="Due July 24"/>
+
+			<Label text="Living in own home" />
+			<Text text="Achieved since Dec 19"/>
+
+			<Label text="Establish own consulting firm" />
+			<Text text="open"/>
+
+	</forms:SimpleForm>
+</mvc:View>

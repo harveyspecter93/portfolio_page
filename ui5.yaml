@@ -1,12 +1,27 @@
-specVersion: '1.0'
+specVersion: "2.6"
 metadata:
-  name: 'portfolio_page'
+  name: ch.draeyer.mike.portfolio
 type: application
-ui5Theme: sap_fiori_3
-framework:
-  name: OpenUI5
-  version: 1.93.0
-  libraries:
-    - name: sap.ui.core
-    - name: sap.m
-    - name: themelib_sap_fiori_3
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+          version: 1.108.0
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: ch.draeyer.mike.portfolio
+        ui5Theme: sap_fiori_3
