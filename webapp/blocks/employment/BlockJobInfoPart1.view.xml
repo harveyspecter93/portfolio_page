@@ -4,18 +4,18 @@
 					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
 					  maxContainerCols="2" layout="ResponsiveGridLayout" width="100%">
 
-		<Label text="Job classification"/>
-		<Text text="Professional SAP UI5 Developer"/>
+		<Label text="{i18n>employment.jobinfo.classification.label}"/>
+		<Text text="{i18n>employment.jobinfo.classification.text}"/>
 
 		<Text text=" "/>
 
-		<Label text="Job title"/>
-		<Text text="BizDevOps Engineer"/>
+		<Label text="{i18n>employment.jobinfo.jobtitle.label}"/>
+		<Text text="{i18n>employment.jobinfo.jobtitle.text}"/>
 
 		<Text text=" "/>
 
-		<Label text="Local Job Title"/>
-		<Label text="Frontend Developer"/>
+		<Label text="{i18n>employment.jobinfo.localtitle.label}"/>
+		<Label text="{i18n>employment.jobinfo.localtitle.text}"/>
 	</forms:SimpleForm>
 
 </mvc:View>

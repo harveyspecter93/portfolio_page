@@ -6,10 +6,10 @@
 
 	<forms:SimpleForm layout="ColumnLayout" width="100%">
 
-		<core:Title text="Phone Number"/>
+					<core:Title text="{i18n>personal.connect.phone.title}"/>
 
-		<Label text="Office / Private"/>
-		<Text text="+41 75 402 24 73"/>
+		<Label text="{i18n>personal.connect.phone.label}"/>
+		<Text text="{i18n>personal.connect.phone.text}"/>
 
 	</forms:SimpleForm>
 

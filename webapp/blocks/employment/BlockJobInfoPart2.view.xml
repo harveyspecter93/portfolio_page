@@ -5,18 +5,15 @@
 					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
 					  maxContainerCols="2" layout="ResponsiveGridLayout" width="100%">
 
-		<Label text="Employee Class"/>
-		<Text text="Employee"/>
-
+		<Label text="{i18n>employment.jobinfo.empclass.label}"/>
+		<LText text="{i18n>employment.jobinfo.empclass.text}"/>
 		<Text text=" "/>
-
-		<Label text="FTE"/>
-		<Text text="0.8"/>
-
+		<Label text="{i18n>employment.jobinfo.fte.label}"/>
+		<LText text="{i18n>employment.jobinfo.fte.text}"/>
 		<Text text=" "/>
-
-		<Label text="Standard Weekly Hours"/>
-		<Label text="41"/>
+		<Label text="{i18n>employment.jobinfo.weeklyhours.label}"/>
+		<LText text="{i18n>employment.jobinfo.weeklyhours.text}"/>
+		
 	</forms:SimpleForm>
 
 

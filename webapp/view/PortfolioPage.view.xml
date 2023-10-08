@@ -39,7 +39,7 @@
 				</snappedTitleOnMobile>
 
 				<actions>
-					<m:Button text="Toggle Footer" press=".toggleFooter"/>
+					<m:Button text="{i18n>header.action.toggleFooter}" press=".toggleFooter"/>
 				</actions>
 			</ObjectPageDynamicHeaderTitle>
 		</headerTitle>
@@ -54,22 +54,22 @@
 					</layout:VerticalLayout>
 
 				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-					<m:Label text="Hello! I am Michael and I study at BFH"/>
+					<m:Label text="{i18n>header.content.hello}"/>
 					<m:VBox>
-						<m:Label text="Achieved goals"/>
+						<m:Label text="{i18n>header.content.goals}"/>
 						<m:ProgressIndicator percentValue="30" displayValue="30%"/>
 					</m:VBox>
 				</layout:VerticalLayout>
 
 				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
-					<m:Label text="Uetendorf BE, Switzerland"/>
+					<m:Label text="{i18n>header.content.location}"/>
 				</layout:VerticalLayout>
 			</m:FlexBox>
 		</headerContent>
 		<sections>
-			<ObjectPageSection titleUppercase="false" title="2023 Goals Plan">
+			<ObjectPageSection>
 				<subSections>
-					<ObjectPageSubSection title="Goal summary" titleUppercase="false">
+					<ObjectPageSubSection title="{i18n>goals.title}" titleUppercase="false">
 						<blocks>
 							<goals:GoalsBlock id="goalsblock"/>
 						</blocks>
@@ -77,9 +77,9 @@
 				</subSections>
 			</ObjectPageSection>
 
-			<ObjectPageSection titleUppercase="false" title="Personal">
+			<ObjectPageSection titleUppercase="false" title="{i18n>personal.title}">
 				<subSections>
-					<ObjectPageSubSection title="Connect" titleUppercase="false">
+					<ObjectPageSubSection title="{i18n>personal.connect.title}" titleUppercase="false">
 						<personal:BlockAdresses id="adresses"/>
 						<personal:BlockPhoneNumber id="phone"/>
 						<personal:BlockSocial id="social"/>
@@ -88,9 +88,9 @@
 				</subSections>
 			</ObjectPageSection>
 
-			<ObjectPageSection titleUppercase="false" title="Employment">
+			<ObjectPageSection titleUppercase="false" title="{i18n>employment.title}">
 				<subSections>
-					<ObjectPageSubSection title="Job information" titleUppercase="false">
+					<ObjectPageSubSection title="{i18n>employment.jobinfo.title}" titleUppercase="false">
 						<blocks>
 							<employment:BlockJobInfoPart1 id="jobinfopart1"/>
 							<employment:BlockJobInfoPart2 id="jobinfopart2"/>
@@ -98,13 +98,13 @@
 						</blocks>
 					</ObjectPageSubSection>
 
-					<ObjectPageSubSection title="Employee Details" titleUppercase="false">
+					<ObjectPageSubSection title="{i18n>employment.empdetail.title}" titleUppercase="false">
 						<blocks>
 							<employment:BlockEmpDetail id="empdetail" columnLayout="1"/>
 						</blocks>
 					</ObjectPageSubSection>
 
-					<ObjectPageSubSection title="Job Relationship" titleUppercase="false">
+					<ObjectPageSubSection title="{i18n>employment.relations.title}" titleUppercase="false">
 						<blocks>
 							<employment:EmploymentBlockJob id="employmentblockjob" showSubSectionMore="true">
 								<employment:mappings>

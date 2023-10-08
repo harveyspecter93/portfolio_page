@@ -4,7 +4,8 @@
 	<forms:SimpleForm editable="false" labelSpanL="4" labelSpanM="4"
 					  labelSpanS="4" emptySpanL="0" emptySpanM="0" emptySpanS="0"
 					  maxContainerCols="2" width="100%">
-		<core:Title text="Social Accounts"/>
+		<!--translation not needed -->
+		<core:Title text="Social Media"/>
 
 		<Label text="Xing"/>
 		<Text text="/Michael_Draeyer"/>

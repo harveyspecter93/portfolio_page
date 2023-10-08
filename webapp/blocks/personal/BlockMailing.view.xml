@@ -6,14 +6,12 @@
 
 	<forms:SimpleForm layout="ColumnLayout" width="100%">
 
-		<core:Title text="Mailing Address"/>
+			<core:Title text="{i18n>personal.connect.mail.title}"/>
 
-		<Label text="Work"/>
-		<Text text="michael.draeyer@sbb.ch"/>
-
-		
-		<Label text="Private"/>
-		<Text text="mike.draeyer@gmail.ch"/>
+		<Label text="{i18n>personal.connect.mail.private.label}"/>
+		<Text text="{i18n>personal.connect.mail.private.text}"/>
+		<Label text="{i18n>personal.connect.mail.office.label}"/>
+		<Text text="{i18n>personal.connect.mail.office.text}"/>
 
 	</forms:SimpleForm>
 </mvc:View>

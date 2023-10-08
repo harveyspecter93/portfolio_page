@@ -3,13 +3,13 @@
 
 	<forms:SimpleForm layout="ColumnLayout" editable="false" width="100%">
 
-		<core:Title text="Addresses"/>
+		<core:Title text="{i18n>personal.connect.address.title}"/>
 
-		<Label text="Home Address"/>
-		<Text text="Flurweg 8, 3661 Uetendorf"/>
-
-		<Label text="Office Address"/>
-		<Text text="Hilfikerstrasse 1, 3014 Bern"/>
+		<Label text="{i18n>personal.connect.address.home.label}"/>
+		<Text text="{i18n>personal.connect.address.home.text}"/>
+		<Label text="{i18n>personal.connect.address.office.label}"/>
+		<Text text="{i18n>personal.connect.address.office.text}"/>
+		
 
 	</forms:SimpleForm>
 </mvc:View>

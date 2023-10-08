@@ -6,13 +6,12 @@
 
 	<layout:HorizontalLayout class="sapUiSmallMarginTop">
 		<layout:VerticalLayout>
-			<Label text="Manager"/>
+			<Label text="{i18n>employment.jobinfo.manager.title}"/>
 			<layout:HorizontalLayout>
 					<layout:content>
 						<layout:VerticalLayout>
-							<Text text="Pascal Albert"/>
-							<Text text="Center Leader"/>
-
+							<Text text="{i18n>employment.jobinfo.manager.name}"/>
+							<Text text="{i18n>employment.jobinfo.manager.function}"/>
 						</layout:VerticalLayout>
 					</layout:content>
 			</layout:HorizontalLayout>
