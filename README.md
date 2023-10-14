@@ -29,5 +29,6 @@
 #### Consulted:
 
  -  https://sapui5.hana.ondemand.com/1.108.0/#/api
+ -  https://blog.surges.eu/cors-proxy-server-for-remote-odata-service-in-local-sapui5-dev/
  
 

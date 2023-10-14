@@ -5,6 +5,7 @@
 	xmlns:goals="ch.draeyer.mike.portfolio.blocks.goals"
 	xmlns:personal="ch.draeyer.mike.portfolio.blocks.personal"
 	xmlns:employment="ch.draeyer.mike.portfolio.blocks.employment"
+	xmlns:interests="ch.draeyer.mike.portfolio.blocks.interests"
 	controllerName="ch.draeyer.mike.portfolio.controller.Portfolio"
 	height="100%">
 	<ObjectPageLayout 
@@ -126,6 +127,28 @@
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
+
+			<ObjectPageSection title="{i18n>interests.title}" titleUppercase="false">
+				<subSections>
+					<ObjectPageSubSection title="{i18n>interests.qr.title}" titleUppercase="false">
+						<blocks>
+							<interests:QrBlock id="qrblock" generateQr="onGeneradteQrCode" qrChanged="onQrLiveChange">
+								<interests:mappings>
+									<ModelMapping externalModelName="ObjectPageModel" internalModelName="qr"
+												  externalPath="/QrCode"/>
+								</interests:mappings>
+							</interests:QrBlock>
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="tbd" titleUppercase="false">
+						<m:FlexBox>
+							<m:Label text="another API" />
+						</m:FlexBox>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+
 		</sections>
 	</ObjectPageLayout>
 </mvc:View>

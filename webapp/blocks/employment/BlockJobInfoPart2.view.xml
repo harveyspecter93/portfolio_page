@@ -6,13 +6,13 @@
 					  maxContainerCols="2" layout="ResponsiveGridLayout" width="100%">
 
 		<Label text="{i18n>employment.jobinfo.empclass.label}"/>
-		<LText text="{i18n>employment.jobinfo.empclass.text}"/>
+		<Text text="{i18n>employment.jobinfo.empclass.text}"/>
 		<Text text=" "/>
 		<Label text="{i18n>employment.jobinfo.fte.label}"/>
-		<LText text="{i18n>employment.jobinfo.fte.text}"/>
+		<Text text="{i18n>employment.jobinfo.fte.text}"/>
 		<Text text=" "/>
 		<Label text="{i18n>employment.jobinfo.weeklyhours.label}"/>
-		<LText text="{i18n>employment.jobinfo.weeklyhours.text}"/>
+		<Text text="{i18n>employment.jobinfo.weeklyhours.text}"/>
 		
 	</forms:SimpleForm>
 

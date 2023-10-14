@@ -24,6 +24,12 @@
             "name": "Loretana",
             "job": "Team Member"
         }
-    ]
+    ],
+    "QrCode": {
+        "isBtnEnabled": false,
+        "isImgVisible": false,
+        "imgSrc": "",
+        "inputValue": ""
+    }
   }
   

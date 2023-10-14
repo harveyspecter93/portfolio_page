@@ -1,0 +1,10 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:forms="sap.ui.layout.form" xmlns="sap.m" 
+		controllerName="ch.draeyer.mike.portfolio.controller.eventing.EventingBlock">
+	 <FlexBox direction="Column" class="sapUiContentPadding sapUiSmallMargin">
+        <Text text="QR codes have revolutionized the way we access information. Scan and discover the world with a simple code!" />
+        <Label text="Enter URL:" />
+        <Input value="{qr>inputValue}" liveChange="onQrLiveChange" width="100%" placeholder="Enter text or URL" />
+        <Button text="Generate QR Code" press="onGenerateQrCode" type="Emphasized" enabled="{qr>isBtnEnabled}" />
+		<Image src="{qr>imgSrc}" visible="{qr>isImgVisible}" mode="InlineSvg" alt="qrtag"/>
+      </FlexBox>
+</mvc:View>

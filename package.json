@@ -5,13 +5,21 @@
   "author": "Michael Dräyer",
   "description": "EWEB - Portfolio Page Michael D.",
   "scripts": {
-    "start": "ui5 serve",
-    "build": "ui5 build"
+    "start": "npm-run-all build --parallel start:webapp proxy",
+    "start:webapp": "ui5 serve",
+    "start:dist": "serve dist",
+    "build": "rimraf dist && ui5 build --a",
+    "proxy": "node proxy.js"
   },
   "devDependencies": {
-    "@ui5/cli": "^3.0.0",
     "@sap/ux-ui5-tooling": "1",
+    "@ui5/cli": "^3.7.0",
     "rimraf": "3.0.2",
-    "ui5-task-flatten-library": "0.2.5"
+    "serve": "^14.2.1",
+    "ui5-task-flatten-library": "0.2.5",
+    "express": "latest",
+    "npm-run-all": "^4.1.5",
+    "cors-anywhere": "^0.4.3"
+    
   }
 }
