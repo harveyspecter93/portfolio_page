@@ -25,6 +25,9 @@
             "job": "Team Member"
         }
     ],
+    "Profile": {
+        "imgSrc": "../img/draeyer_mike.png"
+    },
     "QrCode": {
         "isBtnEnabled": false,
         "isImgVisible": false,
