@@ -22,7 +22,6 @@
 
 				<snappedHeading>
 					<m:FlexBox  fitContainer="true" alignItems="Center">
-						<m:Avatar src="../img/draeyer_mike.png" class="sapUiTinyMarginEnd"/>
 						<m:Title text="Michael Dräyer" wrapping="true"/>
 					</m:FlexBox>
 				</snappedHeading>
@@ -47,7 +46,7 @@
 
 		<headerContent>
 			<m:FlexBox wrap="Wrap">
-				<m:Avatar class="sapUiSmallMarginEnd" src="../img/draeyer_mike.png"  displaySize="L" />
+				<m:Avatar id="avatar" class="sapUiSmallMarginEnd"  displaySize="L" />
 
 					<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
 						<m:Link text="+41 75 402 24 73"/>

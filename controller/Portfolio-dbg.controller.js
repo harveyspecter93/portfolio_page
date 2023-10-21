@@ -10,8 +10,19 @@ sap.ui.define([
         //** LIFECYCLE-METHODS */
 		onInit: function () {
 			this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
-			var oJsonModel = new JSONModel(sap.ui.require.toUrl("ch/draeyer/mike/portfolio/model/data.json"));
-			this.getView().setModel(oJsonModel, "ObjectPageModel");			
+			const sPath = sap.ui.require.toUrl("ch/draeyer/mike/portfolio/model/data.json"),
+				  sImgSrcPath = sap.ui.require.toUrl("ch/draeyer/mike/portfolio/img/draeyer_mike.png");
+			let oJsonModel = new JSONModel(sPath);
+
+			//debugger;
+			oJsonModel.dataLoaded().then(_ => {
+			//	oJsonModel.setProperty("/Profile/imgSrc", sImgSrcPath);
+				this.getView().byId("avatar").setSrc(sImgSrcPath);
+				this.getView().setModel(oJsonModel, "ObjectPageModel");		
+			});
+
+				
+
 		},
 
         //** EVENT-HANDLING */
