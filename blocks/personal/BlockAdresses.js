@@ -1,0 +1,2 @@
+sap.ui.define(["sap/uxap/BlockBase"],function(e){"use strict";var a=e.extend("ch.draeyer.mike.portfolio.blocks.personal.BlockAdresses",{metadata:{}});return a});
+//# sourceMappingURL=BlockAdresses.js.map

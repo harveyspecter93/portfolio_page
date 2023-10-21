@@ -1,0 +1,1 @@
+{"version":3,"file":"BlockPhoneNumber.js","names":["sap","ui","define","BlockBase","BlockPhoneNumber","extend","metadata"],"sources":["BlockPhoneNumber-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,CAAC,sBACd,SAAUC,GACT,aAEA,IAAIC,EAAmBD,EAAUE,OAAO,6DAA8D,CACrGC,SAAU,CAAC,IAIZ,OAAOF,CAER"}

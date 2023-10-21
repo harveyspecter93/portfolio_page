@@ -1,0 +1,1 @@
+{"version":3,"file":"BlockAdresses.js","names":["sap","ui","define","BlockBase","BlockAdresses","extend","metadata"],"sources":["BlockAdresses-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,CAAC,sBAAuB,SAAUC,GAC/C,aAEA,IAAIC,EAAgBD,EAAUE,OAAO,0DAA2D,CAC/FC,SAAU,CAAC,IAEZ,OAAOF,CACR"}

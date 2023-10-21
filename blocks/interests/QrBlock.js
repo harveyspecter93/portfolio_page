@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/library","sap/uxap/BlockBase"],function(e,r){"use strict";const t=e.mvc.ViewType;return r.extend("ch.draeyer.mike.portfolio.blocks.interests.QrBlock",{metadata:{views:{Collapsed:{viewName:"ch.draeyer.mike.portfolio.blocks.interests.QrBlock",type:t.XML},Expanded:{viewName:"ch.draeyer.mike.portfolio.blocks.interests.QrBlock",type:t.XML}},events:{qrChanged:{},generateQr:{}}}})});
+//# sourceMappingURL=QrBlock.js.map

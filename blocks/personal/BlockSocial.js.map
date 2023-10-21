@@ -1,0 +1,1 @@
+{"version":3,"file":"BlockSocial.js","names":["sap","ui","define","BlockBase","BlockSocial","extend","metadata"],"sources":["BlockSocial-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,CAAC,sBAAuB,SAAUC,GAC/C,aAEA,IAAIC,EAAcD,EAAUE,OAAO,wDAAyD,CAC3FC,SAAU,CAAC,IAIZ,OAAOF,CAER"}

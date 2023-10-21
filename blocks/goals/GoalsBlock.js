@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/library","sap/uxap/BlockBase"],function(e,o){"use strict";var a=e.mvc.ViewType;var l=o.extend("ch.draeyer.mike.portfolio.blocks.goals.GoalsBlock",{metadata:{views:{Collapsed:{viewName:"ch.draeyer.mike.portfolio.blocks.goals.GoalsBlock",type:a.XML},Expanded:{viewName:"ch.draeyer.mike.portfolio.blocks.goals.GoalsBlock",type:a.XML}}}});return l});
+//# sourceMappingURL=GoalsBlock.js.map

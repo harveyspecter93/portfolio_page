@@ -1,0 +1,2 @@
+sap.ui.define(["sap/uxap/BlockBase"],function(e){"use strict";var o=e.extend("ch.draeyer.mike.portfolio.blocks.employment.EmploymentBlockJob",{metadata:{views:{Collapsed:{viewName:"ch.draeyer.mike.portfolio.blocks.employment.EmploymentBlockJobCollapsed",type:"XML"},Expanded:{viewName:"ch.draeyer.mike.portfolio.blocks.employment.EmploymentBlockJobExpanded",type:"XML"}}}});return o});
+//# sourceMappingURL=EmploymentBlockJob.js.map
