@@ -10,7 +10,8 @@
 	height="100%">
 	<ObjectPageLayout 
 		showTitleInHeaderContent="true"
-		upperCaseAnchorBar="false">
+		upperCaseAnchorBar="false"
+		showFooter="{ObjectPageModel>/isFooterVisible}">
 		<headerTitle>
 			<ObjectPageDynamicHeaderTitle>
 				<expandedHeading>
@@ -39,7 +40,7 @@
 				</snappedTitleOnMobile>
 
 				<actions>
-					<m:Button text="{i18n>header.action.toggleFooter}" press=".toggleFooter"/>
+					<m:Button text="{i18n>header.action.toggleFooter}" press=".onToggleFooter"/>
 				</actions>
 			</ObjectPageDynamicHeaderTitle>
 		</headerTitle>
@@ -149,5 +150,11 @@
 
 
 		</sections>
+		<footer>
+			<m:OverflowToolbar>
+				<m:ToolbarSpacer />
+				<m:Button text="{i18n>footer.button.interconnect}" type="Emphasized" press=".onOpenInsta" />
+			</m:OverflowToolbar>
+		</footer>
 	</ObjectPageLayout>
 </mvc:View>

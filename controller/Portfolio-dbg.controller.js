@@ -2,8 +2,11 @@ sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/json/JSONModel",
 	"sap/ui/core/library",
-], function (Controller, JSONModel, coreLibrary) {
+	"sap/m/library"
+], function (Controller, JSONModel, coreLibrary, mobileLibrary) {
 	"use strict";
+
+	const URLHelper = mobileLibrary.URLHelper;
 
 	return Controller.extend("ch.draeyer.mike.portfolio.controller.Portfolio", {
 
@@ -40,6 +43,10 @@ sap.ui.define([
 
 		},
 
+		onOpenInsta: function(){
+			URLHelper.redirect("https://www.instagram.com/michualoha", true);
+		},
+
 		onQrLiveChange: function(oEvent){
 			const sValue = oEvent.getParameters().newValue;
 			let oViewModel = this.getView().getModel("ObjectPageModel");
@@ -49,7 +56,15 @@ sap.ui.define([
 			if(!sValue){
 				oViewModel.setProperty("/QrCode/isImgVisible", false);
 			}
-		}	
+		},	
+
+		onToggleFooter: function(){
+			let oModel = this.getView().getModel("ObjectPageModel"),
+				bIsVisible = oModel.getProperty("/isFooterVisible");
+
+			this.getView().getModel("ObjectPageModel").setProperty("/isFooterVisible", !bIsVisible);  
+		},
+
 
 	});
 
