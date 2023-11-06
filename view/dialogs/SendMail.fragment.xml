@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Dialog title="{i18n>dialogs.sendmail.title}" contentWidth="600px">
+		<FlexBox direction="Column" class="sapUiSmallMargin">
+				<Label text="{i18n>dialogs.sendmail.type.label}" />
+                <Select
+                    class="sapUiTinyMarginBottom"
+					items="{
+						path: 'ObjectPageModel>/MailAddresses'
+					}">
+					<core:Item key="{ObjectPageModel>type}" text="{ObjectPageModel>type}" />
+				</Select>
+                		<Label text="{i18n>dialogs.sendmail.subject.label}" />
+		<RadioButtonGroup columns="3" width="100%" class="sapUiMediumMarginBottom">
+			<RadioButton id="RB1-1" text="{i18n>dialogs.sendmail.subject.1}" />
+			<RadioButton id="RB1-2" text="{i18n>dialogs.sendmail.subject.2}" />
+			<RadioButton id="RB1-3" text="{i18n>dialogs.sendmail.subject.3}" />
+			<RadioButton id="RB1-4" text="{i18n>dialogs.sendmail.subject.4}" />
+			<RadioButton id="RB1-5" text="{i18n>dialogs.sendmail.subject.5}" />
+			<RadioButton id="RB1-6" text="{i18n>dialogs.sendmail.subject.6}" />
+		</RadioButtonGroup>
+		</FlexBox>
+		<beginButton>
+			<Button text="{i18n>dialogs.sendmail.beginButton.text}" press="onSendMail" type="Emphasized"/>
+		</beginButton>
+		<endButton>
+			<Button text="{i18n>dialogs.sendmail.endButton.text}" press="onCancelSendMail"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>
