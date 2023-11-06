@@ -47,6 +47,10 @@ sap.ui.define([
 			URLHelper.redirect("https://www.instagram.com/michualoha", true);
 		},
 
+		onPressSendMail: function(){
+			this._getDialog("SendMail").open();
+		},
+
 		onQrLiveChange: function(oEvent){
 			const sValue = oEvent.getParameters().newValue;
 			let oViewModel = this.getView().getModel("ObjectPageModel");
@@ -63,6 +67,21 @@ sap.ui.define([
 				bIsVisible = oModel.getProperty("/isFooterVisible");
 
 			this.getView().getModel("ObjectPageModel").setProperty("/isFooterVisible", !bIsVisible);  
+		},
+
+
+
+		_getDialog: function (sDialogName) {
+			let oDialog = this["_o" + sDialogName];
+
+			if (!oDialog) {
+				oDialog = sap.ui.xmlfragment(sDialogName, "ch.draeyer.mike.portfolio.view.dialogs." + sDialogName, this);
+				oDialog.setModel(this.getView().getModel("i18n"), "i18n");
+				oDialog.setModel(this.getView().getModel("ObjectPageModel"), "ObjectPageModel");
+				this["_o" + sDialogName] = oDialog;
+				this.getView().addDependent(oDialog);
+			}
+			return oDialog;
 		},
 
 

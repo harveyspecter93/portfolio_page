@@ -2,7 +2,8 @@
 		xmlns:mvc="sap.ui.core.mvc"
 		xmlns:forms="sap.ui.layout.form"
 		xmlns:core="sap.ui.core"
-		xmlns="sap.m">
+		xmlns="sap.m"
+		controllerName="ch.draeyer.mike.portfolio.controller.eventing.EventingBlock">
 
 	<forms:SimpleForm layout="ColumnLayout" width="100%">
 
@@ -12,6 +13,8 @@
 		<Text text="{i18n>personal.connect.mail.private.text}"/>
 		<Label text="{i18n>personal.connect.mail.office.label}"/>
 		<Text text="{i18n>personal.connect.mail.office.text}"/>
-
 	</forms:SimpleForm>
+	<FlexBox class="sapUiSmallMarginBegin">
+		<Button text="{i18n>personal.connect.mail.button.text}" press="onPressSendMail" type="Emphasized" />
+	</FlexBox>
 </mvc:View>

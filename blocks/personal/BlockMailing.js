@@ -1,2 +1,2 @@
-sap.ui.define(["sap/uxap/BlockBase"],function(e){"use strict";var a=e.extend("ch.draeyer.mike.portfolio.blocks.personal.BlockMailing",{metadata:{}});return a});
+sap.ui.define(["sap/ui/core/library","sap/uxap/BlockBase"],function(e,o){"use strict";const a=e.mvc.ViewType;return o.extend("ch.draeyer.mike.portfolio.blocks.personal.BlockMailing",{metadata:{views:{Collapsed:{viewName:"ch.draeyer.mike.portfolio.blocks.personal.BlockMailing",type:a.XML},Expanded:{viewName:"ch.draeyer.mike.portfolio.blocks.personal.BlockMailing",type:a.XML}},events:{onPressSendMail:{}}}})});
 //# sourceMappingURL=BlockMailing.js.map
