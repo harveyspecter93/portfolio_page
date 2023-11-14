@@ -14,5 +14,9 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 			this.oParentBlock.fireQrChanged(oEvent.getParameters());
 		},
 
+		onPressSendMail: function(oEvent) {
+			this.oParentBlock.fireOnPressSendMail(oEvent.getParameters());
+		}
+
 	});
 });

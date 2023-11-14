@@ -1,9 +1,24 @@
-sap.ui.define(['sap/uxap/BlockBase'], function (BlockBase) {
+sap.ui.define(["sap/ui/core/library", 'sap/uxap/BlockBase'], function (coreLibrary, BlockBase) {
 	"use strict";
 
-	var BlockMailing = BlockBase.extend("ch.draeyer.mike.portfolio.blocks.personal.BlockMailing", {
-		metadata: {}
-	});
+	const ViewType = coreLibrary.mvc.ViewType;
 
-	return BlockMailing;
+	return BlockBase.extend("ch.draeyer.mike.portfolio.blocks.personal.BlockMailing", {
+		metadata: {
+			views: {
+				Collapsed: {
+					viewName: "ch.draeyer.mike.portfolio.blocks.personal.BlockMailing",
+					type: ViewType.XML
+				},
+				Expanded: {
+					viewName: "ch.draeyer.mike.portfolio.blocks.personal.BlockMailing",
+					type: ViewType.XML
+				}
+			},
+			events: {
+				"onPressSendMail": {}
+			}
+		}
+
+	});
 });

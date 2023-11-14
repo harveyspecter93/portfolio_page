@@ -33,6 +33,16 @@
         "isImgVisible": false,
         "imgSrc": "",
         "inputValue": ""
-    }
+    },
+    "MailAddresses": [
+        {
+            "type": "Private",
+            "address": "mike.draeyer@gmail.com"
+        },
+        {
+            "type": "Office",
+            "address": "michael.draeyer@sbb.ch"
+        }
+    ]
   }
   

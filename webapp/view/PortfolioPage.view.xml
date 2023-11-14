@@ -84,7 +84,7 @@
 						<personal:BlockAdresses id="adresses"/>
 						<personal:BlockPhoneNumber id="phone"/>
 						<personal:BlockSocial id="social"/>
-						<personal:BlockMailing id="mailing"/>
+						<personal:BlockMailing id="mailing" onPressSendMail="onPressSendMail"/>
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
