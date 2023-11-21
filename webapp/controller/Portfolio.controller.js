@@ -47,6 +47,21 @@ sap.ui.define([
 			URLHelper.redirect("https://www.instagram.com/michualoha", true);
 		},
 
+		onPokemonSelectChange: function(oEvent){
+			const sPokemonIndex = oEvent.getParameters().selectedItem.getKey().split("/").slice(-2)[0];
+			let oImage = this.getView().byId("imgPokemon"),
+				oText = this.getView().byId("txtFlavor")
+			this._getPokemonById(sPokemonIndex).then( oPokemon => {
+				
+				let aFlavorTextsEN = oPokemon.species.flavor_text_entries.filter(flavor => flavor.language.name === "en"),
+				sRandomFlavor = aFlavorTextsEN.sort(() => 0.5 - Math.random())[0].flavor_text;
+
+				oImage.setSrc(oPokemon.form.sprites.front_default);
+				oText.setText(sRandomFlavor);
+			} );
+
+		},
+
 		onPressSendMail: function(){
 			this._getDialog("SendMail").open();
 		},
@@ -83,6 +98,18 @@ sap.ui.define([
 			}
 			return oDialog;
 		},
+
+
+		_getPokemonById: async sId =>  {
+			const species = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${ sId }/`);
+			const form = await fetch(`https://pokeapi.co/api/v2/pokemon-form/${ sId }/`);
+			
+			return { species: await species.json(), form: await form.json() };
+
+		  },
+
+		
+
 
 
 	});

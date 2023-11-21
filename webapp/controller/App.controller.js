@@ -8,7 +8,6 @@ sap.ui.define([
 		onInit: function () {
             //set content density to whole app
 			this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
-		
 		}
 
 	});
