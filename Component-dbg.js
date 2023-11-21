@@ -23,7 +23,19 @@ sap.ui.define([
 
 			// create the views based on the url/hash
 			this.getRouter().initialize();
+
+			this.getPokemons().then( oPokedex => {
+				let oPokeModel = new JSONModel(oPokedex);
+				this.setModel(oPokeModel, "pokemonsAPI");
+			});
+
+
 		},
+
+		getPokemons : async _ =>  {
+			const response = await fetch("https://pokeapi.co/api/v2/generation/1/");
+			return await response.json();
+		  },
 
 		getContentDensityClass : _ => !Device.support.touch ? "sapUiSizeCompact" : "sapUiSizeCozy"
 
