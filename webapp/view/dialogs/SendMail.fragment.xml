@@ -7,7 +7,7 @@
 					items="{
 						path: 'ObjectPageModel>/MailAddresses'
 					}">
-					<core:Item key="{ObjectPageModel>type}" text="{ObjectPageModel>type}" />
+					<core:Item key="{ObjectPageModel>address}" text="{ObjectPageModel>type}" />
 				</Select>
                 		<Label text="{i18n>dialogs.sendmail.subject.label}" />
 		<RadioButtonGroup columns="3" width="100%" class="sapUiMediumMarginBottom">
